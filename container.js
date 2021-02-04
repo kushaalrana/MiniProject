@@ -13,6 +13,7 @@ const simpleDependencies = [      //Adding modules here so that every time we do
      ['Club','./models/clubs'],
      ['Users', './models/user'],
      ['Message', './models/message'],
+     ['Group', './models/groupmessage'],
      ['async','async']
 ];
 

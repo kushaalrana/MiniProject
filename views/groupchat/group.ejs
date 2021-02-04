@@ -115,17 +115,20 @@
 
                                 <div class="chat_area">
                                     <ul id="messages" class="list-unstyled">
-                                        <!-- <li class="left">
-                                            <span class="chat-img1 pull-left">
-                                                <img src="" alt="" class="img-circle">
-                                            </span>
-
-                                            <div class="chat-body1">
-                                                <span class="chat-name">UserName</span>
-                                                <br>
-                                                MessageBody
-                                            </div>
-                                        </li> -->
+                                       <% _.forEach(groupMsg, function(val) { %>
+                                       <% if(groupName === val.name) {%>
+                                        <li class="left">
+                                           <span class="chat-img1 pull-left">
+                                               <img src="https://footballkik.s3.amazonaws.com/<%= val.sender.userImage %>" class="img-circle" alt="">
+                                           </span>
+                                           <div class="chat-body1">
+                                               <span class="chat-name"><%= val.sender.username %></span>
+                                               <br>
+                                               <%= val.body %>
+                                           </div>
+                                        </li>
+                                        <% } %>
+                                        <% }) %>
                                         </ul>
                                         <script id="message-template" type="text/template">
                                         <li class="left">
