@@ -1,0 +1,44 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "Chat Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushaalrana/Mini-Project.git"
+  },
+  "author": "Kushaal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kushaalrana/Mini-Project/issues"
+  },
+  "homepage": "https://github.com/kushaalrana/Mini-Project#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "dependable": "^1.1.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "formidable": "^1.2.2",
+    "lodash": "^4.17.20",
+    "mongoose": "^4.13.21",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^3.1.0"
+  }
+}
