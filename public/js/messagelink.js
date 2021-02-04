@@ -14,12 +14,12 @@ $(document).ready(function(){
         } 
        
         socket.emit('join PM', params);
-
+    });
         
         socket.on('new refresh', function(){
             $('#reload').load(location.href + ' #reload');
         });
-    });
+    
     
         });
 
@@ -41,4 +41,4 @@ $(document).ready(function(){
         var temp = input[value_1];
         input[value_1] = input[value_2];
         input[value_2] = temp;
-    }
+    } 
