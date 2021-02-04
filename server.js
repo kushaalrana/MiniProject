@@ -19,7 +19,7 @@ const fs = require('fs');
 const {Global} = require('./helpers/Global');
 
 
-container.resolve(function (users, _, admin,home,group,results, privatechat) {     //This will take an anonymo us function
+container.resolve(function (users, _, admin,home,group,results, privatechat,profile) {     //This will take an anonymo us function
 
     mongoose.set('useFindAndModify', false);
     mongoose.set('useCreateIndex', true);
@@ -49,6 +49,7 @@ container.resolve(function (users, _, admin,home,group,results, privatechat) {  
         admin.SetRouting(router); 
         home.SetRouting(router);
         group.SetRouting(router);
+        profile.SetRouting(router);
         results.SetRouting(router);
      privatechat.SetRouting(router);
         app.use(router);  //Making use of the router 
